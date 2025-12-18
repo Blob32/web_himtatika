@@ -11,22 +11,22 @@ const Profile = () => {
 
   return (
     // Sesuaikan padding/margin agar tidak tertutup navbar
-    <section id="profil" className="relative rounded-t-[5rem] -top-5 py-20 bg-brand-bg bg-brand-bg min-h-screen">
+    <section id="profil" className="relative rounded-t-[5rem] -top-5 pt-20 bg-brand-bg bg-brand-bg min-h-screen">
       <div className="container mx-auto px-6">
 
         {/* --- IDENTITAS KABINET --- */}
         <div className="text-center mb-12">
           <div className="flex mb-6 gap-3 justify-center">
-            {/* Logo */}
-            <img 
+            {/* Logo Hima + Kabinet*/}
+            {/* <img 
               src={logoHimatikaPlain} 
               alt="Logo Himatika" 
               className="h-40 drop-shadow-lg"
-            />
+            /> */}
             <img
               src={cabinetData.logo}
               alt={`Logo ${cabinetData.nama}`}
-              className="h-40 drop-shadow-lg"
+              className="h-20 sm:h-40 drop-shadow-lg"
             />
           </div>
           
@@ -68,6 +68,8 @@ const Profile = () => {
                 </ul>
             </div>
         </div>
+
+        <div className="border-b-4 border-brand-red/50"></div>
 
         {/* --- GRID BIDANG --- */}
         {/* <div className="text-center mb-10">

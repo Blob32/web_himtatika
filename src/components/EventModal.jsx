@@ -8,7 +8,7 @@ const EventModal = ({ event, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
+        className="relative bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto inimodalcuy"
         onClick={e => e.stopPropagation()}
       >
         <button
@@ -23,39 +23,33 @@ const EventModal = ({ event, onClose }) => {
             <img
               src={event.logoUrl}
               alt={`${event.title} Logo`}
-              className="w-32 h-32 object-contain rounded-lg shadow-md"
+              className="w-40 h-40 object-contain"
             />
             <div>
               <h2 className="text-3xl font-title font-bold text-brand-red">
                 {event.title}
               </h2>
               {event.theme && (
-                <p className="text-xl font-body text-gray-700 mt-1">
+                <p className="text-md font-title font-semibold text-gray-700 mt-1">
                   {event.theme}
                 </p>
               )}
+              <br /><p className="text-gray-600 font-body">{event.description}</p>
             </div>
           </div>
 
           <div className="mt-6 border-t pt-6">
-            <h3 className="text-xl font-bold font-alt text-brand-dark mb-2">
-              Deskripsi Kegiatan
-            </h3>
-            <p className="text-gray-600 font-body">{event.description}</p>
           </div>
 
           {event.images.length > 0 && (
             <div className="mt-6">
-              <h3 className="text-xl font-bold font-alt text-brand-dark mb-4">
-                Dokumentasi
-              </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {event.images.map((img, index) => (
                   <img
                     key={index}
                     src={img}
                     alt={`Dokumentasi ${index + 1}`}
-                    className="w-full h-auto object-cover rounded-lg shadow-md"
+                    className="w-full h-48 object-cover rounded-lg shadow-md"
                   />
                 ))}
               </div>

@@ -5,7 +5,7 @@ export const exploreItems = [
     id: 1,
     title: "🎙 [HP #S02/E01] Kenalan Lebih Dekat Dengan Kabinet ESCALOGIA",
     thumbnailUrl: "https://i.ytimg.com/vi/RLXIbPMXWnM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBZ3HNFluAUG2sfRcKm28G7xkVm7Q",
-    time: "Minggu, 11 Mei 2025",
+    time: "11 Mei 2025",
     tag: "Podcast",
     link: "https://youtu.be/RLXIbPMXWnM?si=PvoV6vsnc4tPj077"
   },
@@ -13,7 +13,7 @@ export const exploreItems = [
     id: 2,
     title: "Implementasi Program Makan Bergizi Gratis: Antara Harapan dan Tantangan",
     thumbnailUrl: "https://mmc.tirto.id/image/otf/1240x0/2025/01/13/img-20250113-wa0012_ratio-16x9.jpg",
-    time: "Sabtu, 24 Mei 2025",
+    time: "24 Mei 2025",
     tag: "Artikel",
     link: "https://himatikauinsgd.medium.com/implementasi-program-makan-bergizi-gratis-antara-harapan-dan-tantangan-673c92aa4e54"
   },
@@ -21,7 +21,7 @@ export const exploreItems = [
     id: 3,
     title: "MatLib: Matematika Library",
     thumbnailUrl: [thumbMathlib],
-    time: "2025",
+    time: "Jan-Des",
     tag: "MatLib",
     link: "https://sites.google.com/view/mathlib-himatika/"
   },
@@ -29,7 +29,7 @@ export const exploreItems = [
     id: 4,
     title: "[AFTER MOVIE – ABSOLUTE HIMATIKA 2025]",
     thumbnailUrl: "https://i.ytimg.com/vi/vjPsl5nw7Fg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC1EvnkmIzMXiyO3W9RQ5LsPeqxYg",
-    time: "April - Mei",
+    time: "Apr-Mei",
     tag: "Video",
     link: "https://youtu.be/vjPsl5nw7Fg?si=i1Zd81z1YzopVTwj"
   },
@@ -37,7 +37,7 @@ export const exploreItems = [
     id: 5,
     title: "Indonesia Diterjang Badai PHK: Berenang atau Tenggelam?",
     thumbnailUrl: "https://beritabaru.co/wp-content/uploads/2024/09/demo_buruh_tolak_phk_massal.jpg",
-    time: "Sabtu, 24 Mei 2025",
+    time: "24 Mei 2025",
     tag: "Artikel",
     link: "https://himatikauinsgd.medium.com/indonesia-diterjang-badai-phk-berenang-atau-tenggelam-659b3dcb8fec"
   },
@@ -53,7 +53,7 @@ export const exploreItems = [
     id: 7,
     title: "🎙 [HP #S02/E02] Ngobrol Tentang Self Awareness",
     thumbnailUrl: "https://i.ytimg.com/vi/YHCfs8XJe6A/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAMp7M_AYLfORRsB_0JR8c3q_uFbw",
-    time: "Rabu, 12 November 2025",
+    time: "12 November 2025",
     tag: "Podcast",
     link: "https://youtu.be/YHCfs8XJe6A?si=csqO3e8UMqX8zbds"
   },
@@ -69,8 +69,24 @@ export const exploreItems = [
     id: 9,
     title: "[AFTER MOVIE – TEOREMA 2025]",
     thumbnailUrl: "https://i.ytimg.com/vi/PQ5KT2fKVDo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBKdismmFT_CfeN1Ijnb7hmb2bNdA",
-    time: "September - Oktober",
+    time: "Sep-Okt",
     tag: "Video",
     link: "https://youtu.be/PQ5KT2fKVDo?si=7GwvVCVLwSu56kTW"
+  },
+  {
+    id: 10,
+    title: "🎙 [HP #S02/E03] Berbincang Tentang Self Improvement",
+    thumbnailUrl: "https://i.ytimg.com/vi/9bAfe1PPu44/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC53CyY8NkVcQQSLERYzaWyW4ZNVA",
+    time: "15 Desember 2025",
+    tag: "Podcast",
+    link: "https://youtu.be/9bAfe1PPu44?si=OrIUIvmFKY9svOOP"
+  },
+  {
+    id: 11,
+    title: "🎙 [HP #S02/E04] Sharing Session Horror Story",
+    thumbnailUrl: "https://i.ytimg.com/vi/GtV6it19F6M/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDyzV5clzthmM468CMbIDVbErqlhw",
+    time: "15 Desember 2025",
+    tag: "Podcast",
+    link: "https://youtu.be/GtV6it19F6M?si=GWpskbMM4w15XvEF"
   },
 ]

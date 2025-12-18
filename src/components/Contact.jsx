@@ -75,7 +75,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              placeholder="Nama: Budi Arie"
+              placeholder="Nama: Bahlil"
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ouline-2"
             />

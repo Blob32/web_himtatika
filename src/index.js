@@ -17,6 +17,7 @@ tailwind.config = {
   }
 }
 
+
 // untuk mematikan akses ke inspect elemen
 // document.addEventListener("contextmenu", function(e){
 //   e.preventDefault();
