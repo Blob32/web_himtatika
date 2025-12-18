@@ -26,8 +26,20 @@
   font-family: var(--font-title);
 } */
 
-body{overflow-x: hidden;}
+/* File: src/index.css */
+
+/* Tambahkan ini */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 body::-webkit-scrollbar{
   width: 0;
   background: transparent;
+}
+
+.inimodalcuy::-webkit-scrollbar{
+  width: 0;
+  background: transparent; 
 }
