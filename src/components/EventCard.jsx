@@ -19,10 +19,10 @@ const EventCard = ({ event, onClick }) => {
         <img
           src={event.images[0]}
           alt={event.title}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {/* Overlay gradient tipis */}
-        <div className="absolute top-0 w-full h-full bg-[linear-gradient(12deg,_#00000073_1%_10%,_transparent_90%)]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
         
         {/* Judul di atas gambar (Opsional, agar hemat tempat di mobile stack) */}
         <div className="absolute bottom-0 left-0 p-4">
