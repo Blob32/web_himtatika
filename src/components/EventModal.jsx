@@ -11,7 +11,12 @@ const EventModal = ({ event, onClose }) => {
         className="relative bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto inimodalcuy"
         onClick={e => e.stopPropagation()}
       >
-        
+       <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-10"
+        >
+          <XIcon className="w-8 h-8" />
+        </button> 
         <div className="p-6 md:p-8">
           <div className="flex flex-col md:flex-row items-start gap-6">
             

@@ -33,7 +33,7 @@ export const events = [
       "Sebagai wujud pemenuhan Tri Dharma Perguruan Tinggi, khususnya pada aspek pengabdian kepada masyarakat. Melalui kegiatan ini, mahasiswa didorong untuk menumbuhkan dan mengembangkan kesadaran sosial sehingga lebih peka terhadap kondisi masyarakat. Selain itu, kegiatan ini juga menjadi wadah bagi Mahasiswa Pendidikan Matematika untuk mengasah kreativitas, serta berkontribusi nyata dalam memberikan manfaat bagi lingkungan sekitar. ",
     logoUrl: [[logoHimabdi]],
     images: getImagesFromArray(himaabdiFiles), 
-    aftermovieUrl: "https://youtu.be/ETuY2fCgCz8?si=YKxoY7HxpaKq_srJ"
+    aftermovieUrl: ""
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const events = [
       "TEOREMA merupakan bentuk pembinaan mahasiswa baru untuk menumbuhkan kesadaran spiritual, intelektual, dan sosial melalui pengalaman belajar yang menyeluruh. Program kerja ini diorientasikan pada penanaman nilai beradab, berwawasan, kreatif, serta bersinergi agar mahasiswa mampu berkembang secara utuh. Dengan begitu, TEOREMA menjadi sarana menanamkan nilai keislaman, pendidikan, dan keorganisasian sebagai fondasi awal berproses di HIMATIKA.",
       logoUrl: [[logoTeo]],
     images: getImagesFromArray(teoFiles), 
-    aftermovieUrl: "https://youtu.be/PQ5KT2fKVDo?si=7GwvVCVLwSu56kTW"
+    aftermovieUrl: ""
   },
   {
     id: 4,
@@ -62,7 +62,7 @@ export const events = [
       "GAMMA FEST adalah event terakhir yang diselenggarakan oleh HIMATIKA sekaligus sebagai perayaan milad HIMATIKA UIN SGD Bandung.",
     logoUrl: [[logoGamma]],
     images: getImagesFromArray(gammaFiles), 
-    aftermovieUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    aftermovieUrl: ""
   },
   // {
   //   id: 6,
