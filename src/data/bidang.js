@@ -1,3 +1,5 @@
+
+
 export const bidangList = [
   {
     id: 1,

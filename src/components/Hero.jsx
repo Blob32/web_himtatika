@@ -35,7 +35,7 @@ const Hero = () => {
       if (index > fullText.length) {
         clearInterval(intervalId);
       }
-    }, 100);
+    }, 80);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -48,7 +48,7 @@ const Hero = () => {
     <section
       id="home"
       // Tambahkan 'overflow-hidden' agar jika gambar bergeser terlalu jauh, tidak membuat scrollbar aneh
-      className="relative h-screen flex items-center justify-center text-white text-center overflow-hidden"
+      className="relative h-screen flex items-center justify-center text-white text-center"
     >
       {/* BACKGROUND WRAPPER */}
 <div className="absolute inset-0 z-0 select-none">
@@ -59,26 +59,26 @@ const Hero = () => {
     // UBAH DARI: -top-[10vh] MENJADI: -top-[15vh] atau top-0 jika ragu
     // UBAH DARI: h-[120vh] MENJADI: h-[130vh]
     // Ini memberikan "ruang lebih" di atas agar saat parallax menarik gambar, tidak ada celah putih.
-    className="absolute w-full h-[120vh] object-cover -top-[15vh] left-0 will-change-transform"
+    className="absolute w-full h-screen object-cover left-0 will-change-transform"
   />
 
   {/* Gradient Overlay */}
-  <div className="absolute inset-0 w-full h-screen bg-gradient-to-t from-[#240000] via-[#240000]/60 to-transparent z-10"></div>
+  <div className="absolute top-0 w-full h-[200%] bg-[linear-gradient(0deg,#240000_50%,transparent)]"></div>
 </div>
 
       {/* CONTENT WRAPPER */}
       <div className="relative z-20 max-w-4xl mx-auto px-6 text-left md:text-center pt-20">
-        <h1 className="text-6xl font-extrabold leading-tight text-white drop-shadow-lg min-h-[160px] md:min-h-[auto]">
-          <span className="inline-block border-r-4 border-brand-red pr-2 animate-pulse">
+        <h1 className="text-6xl font-extrabold leading-tight text-white drop-shadow-lg min-h-40 md:min-h-auto">
+          <span className="inline-block border-r-4 border-brand-red pr-2">
             {text}
           </span>
           <br />
-          <span className="opacity-0 animate-[fadeIn_1s_ease-out_1.5s_forwards]">
+          <span className="opacity-0 animate-[fadeIn_1s_ease-out_2s_forwards]">
             Kami adalah Keluarga
           </span>
         </h1>
         
-        <p className="mt-6 text-lg md:text-xl text-gray-200 drop-shadow max-w-3xl mx-auto opacity-0 animate-[fadeIn_1s_ease-out_2s_forwards]">
+        <p className="mt-6 text-lg md:text-xl text-gray-200 drop-shadow max-w-3xl mx-auto opacity-0 animate-[fadeIn_1s_ease-out_2.5s_forwards]">
           HIMATIKA UIN Sunan Gunung Djati Bandung adalah wadah bagi mahasiswa
           Pendidikan Matematika untuk belajar, berkarya, dan mengabdi sejak
           1999.

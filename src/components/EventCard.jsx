@@ -24,7 +24,7 @@ const EventCard = ({ event, onClick }) => {
         {/* Overlay gradient tipis */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
         
-        {/* Judul di atas gambar (Opsional, agar hemat tempat di mobile stack) */}
+        {/* Judul di atas gambar */}
         <div className="absolute bottom-0 left-0 p-4">
           <h3 className="text-white font-bold font-title text-xl drop-shadow-md">
             {event.title}

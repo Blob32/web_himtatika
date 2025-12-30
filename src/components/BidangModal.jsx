@@ -84,17 +84,6 @@ const BidangModal = ({ bidang, onClose }) => {
                         </ul>
                     </div>
                 </section>
-
-            </div>
-            
-            {/* Footer Modal */}
-            <div className="p-6 bg-gray-50 text-right border-t">
-                 <button
-                    onClick={onClose}
-                    className="px-6 py-2 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition"
-                >
-                    Tutup Detail
-                </button>
             </div>
         </div>
       </div>

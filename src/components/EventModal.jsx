@@ -11,20 +11,21 @@ const EventModal = ({ event, onClose }) => {
         className="relative bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto inimodalcuy"
         onClick={e => e.stopPropagation()}
       >
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-10"
-        >
-          <XIcon className="w-8 h-8" />
-        </button>
-
+        
         <div className="p-6 md:p-8">
           <div className="flex flex-col md:flex-row items-start gap-6">
-            <img
-              src={event.logoUrl}
-              alt={`${event.title} Logo`}
-              className="w-40 h-40 object-contain"
-            />
+            
+            {/* --- BAGIAN LOGO --- */}
+            {event.logoUrl && (
+              <img
+                src={event.logoUrl}
+                alt={`${event.title} Logo`}
+                className="w-40 h-40 object-contain"
+                // Menambahkan lazy load juga pada logo sebagai praktik baik
+                loading="lazy"
+              />
+            )}
+
             <div>
               <h2 className="text-3xl font-title font-bold text-brand-red">
                 {event.title}
@@ -34,14 +35,15 @@ const EventModal = ({ event, onClose }) => {
                   {event.theme}
                 </p>
               )}
-              <br /><p className="text-gray-600 font-body">{event.description}</p>
+              <br />
+              <p className="text-gray-600 font-body">{event.description}</p>
             </div>
           </div>
 
-          <div className="mt-6 border-t pt-6">
-          </div>
+          <div className="mt-6 border-t pt-6"></div>
 
-          {event.images.length > 0 && (
+          {/* --- BAGIAN IMAGES DENGAN LAZY LOAD --- */}
+          {event.images && event.images.length > 0 && (
             <div className="mt-6">
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {event.images.map((img, index) => (
@@ -49,13 +51,17 @@ const EventModal = ({ event, onClose }) => {
                     key={index}
                     src={img}
                     alt={`Dokumentasi ${index + 1}`}
-                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                    // Tambahkan bg-gray-200 (atau warna lain) sebagai placeholder visual saat loading
+                    className="w-full h-48 object-cover rounded-lg shadow-md bg-gray-200"
+                    // INI BAGIAN PENTINGNYA:
+                    loading="lazy" 
                   />
                 ))}
               </div>
             </div>
           )}
 
+          {/* --- BAGIAN AFTERMOVIE --- */}
           {event.aftermovieUrl && (
             <div className="mt-6">
               <h3 className="text-xl font-bold font-alt text-brand-dark mb-4">
@@ -68,7 +74,8 @@ const EventModal = ({ event, onClose }) => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full rounded-lg shadow-lg"
+                  className="w-full h-full rounded-lg shadow-lg bg-black" // bg-black untuk iframe placeholder
+                  loading="lazy" // Iframe juga mendukung lazy loading native modern
                 ></iframe>
               </div>
             </div>

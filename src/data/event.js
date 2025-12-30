@@ -5,8 +5,9 @@ import logoGamma from "../assets/brand/logoGamma.webp"
 import logo from "../assets/brand/hima.webp"
 const absoluteFiles = import.meta.glob('../assets/img/event/absolute/*.webp', { eager: true });
 const himaabdiFiles = import.meta.glob('../assets/img/event/himaabdi/*.webp', { eager: true });
-// const teoFiles = import.meta.glob('../assets/img/event/teorema/*.webp', { eager: true });
-// const gammaFiles = import.meta.glob('../assets/img/event/gamma/*.webp', { eager: true });
+const teoFiles = import.meta.glob('../assets/img/event/teorema/*.webp', { eager: true });
+const gammaFiles = import.meta.glob('../assets/img/event/gamma/*.webp', { eager: true });
+const stukomFiles = import.meta.glob('../assets/img/event/stukom/*.webp', { eager: true });
 
 // 2. Buat fungsi helper sederhana untuk mengubah hasil import menjadi Array URL
 const getImagesFromArray = (modules) => {
@@ -19,7 +20,7 @@ export const events = [
     title: "ABSOLUTE",
     theme: "Abillity Skill and Learning Math Competition",
     description:
-      "ABSOLUTE (Accurate, Brave, Smart, Outstanding, and Talented) merupakan lomba matematika tingkat nasional yang diselenggarakan oleh HIMATIKA untuk siswa SMA/sederajat. Acara ini bertujuan untuk meningkatkan minat dan kemampuan siswa dalam bidang matematika.",
+      "ABSOLUTE Abillity Skill and Learning Math Competition, merupakan Event yang diselenggarakan oleh HIMATIKA UIN SGD Bandung dan merupakan Kegiatan besar pertama yang dilaksanakan. Acara ini bertujuan untuk meningkatkan minat dan kemampuan Mahasiswa dalam bidang matematika, mapun bakat.",
     logoUrl: [[logoAbsolute]],
     images: getImagesFromArray(absoluteFiles), 
     aftermovieUrl: ""
@@ -29,7 +30,7 @@ export const events = [
     title: "HIMATIKA Mengabdi",
     theme: "Pengabdian kepada Masyarakat bersama HIMATIKA",
     description:
-      "Sebagai wujud dari Tridarma Perguruan Tinggi, HIMATIKA Mengabdi adalah program pengabdian kepada masyarakat di berbagai daerah. Kegiatan ini meliputi bakti sosial, pengajaran matematika, dan penyuluhan pendidikan.",
+      "Sebagai wujud pemenuhan Tri Dharma Perguruan Tinggi, khususnya pada aspek pengabdian kepada masyarakat. Melalui kegiatan ini, mahasiswa didorong untuk menumbuhkan dan mengembangkan kesadaran sosial sehingga lebih peka terhadap kondisi masyarakat. Selain itu, kegiatan ini juga menjadi wadah bagi Mahasiswa Pendidikan Matematika untuk mengasah kreativitas, serta berkontribusi nyata dalam memberikan manfaat bagi lingkungan sekitar. ",
     logoUrl: [[logoHimabdi]],
     images: getImagesFromArray(himaabdiFiles), 
     aftermovieUrl: "https://youtu.be/ETuY2fCgCz8?si=YKxoY7HxpaKq_srJ"
@@ -39,9 +40,9 @@ export const events = [
     title: "TEOREMA",
     theme: "Ta'aruf Edukasi Orientasi Jurusan Pendidikan Matematika",
     description:
-      "TEOREMA adalah kegiatan pengenalan program studi dan lingkungan kampus bagi mahasiswa baru Pendidikan Matematika, dikemas secara edukatif dan menyenangkan.",
+      "TEOREMA merupakan bentuk pembinaan mahasiswa baru untuk menumbuhkan kesadaran spiritual, intelektual, dan sosial melalui pengalaman belajar yang menyeluruh. Program kerja ini diorientasikan pada penanaman nilai beradab, berwawasan, kreatif, serta bersinergi agar mahasiswa mampu berkembang secara utuh. Dengan begitu, TEOREMA menjadi sarana menanamkan nilai keislaman, pendidikan, dan keorganisasian sebagai fondasi awal berproses di HIMATIKA.",
       logoUrl: [[logoTeo]],
-    images: getImagesFromArray(absoluteFiles), 
+    images: getImagesFromArray(teoFiles), 
     aftermovieUrl: "https://youtu.be/PQ5KT2fKVDo?si=7GwvVCVLwSu56kTW"
   },
   {
@@ -49,21 +50,18 @@ export const events = [
     title: "STUKOM",
     theme: "Studi Komparatif",
     description:
-    "STUKOM adalah program studi banding ke Himpunan Mahasiswa Matematika di universitas lain untuk bertukar pikiran, memperluas wawasan, dan menjalin jejaring.",
-    logoUrl: "https://picsum.photos/seed/stukom/400/400",
-    images: [
-      "https://picsum.photos/seed/stukom1/400/300",
-      "https://picsum.photos/seed/stukom2/400/300"
-    ]
+    "Studi Komparatif merupakan kegiatan kunjungan dan forum diskusi yang diselenggarakan HIMATIKA UIN Sunan Gunung Djati sebagai sarana pertukaran gagasan, pengalaman, serta wawasan keorganisasian dengan himpunan mahasiswa lain. Kegiatan ini difokuskan pada pemaparan program kerja, sistem kepengurusan, dan manajemen organisasi guna membandingkan serta mengambil praktik-praktik terbaik yang dapat diadaptasi, sehingga tercipta hubungan kelembagaan yang harmonis dan peluang kerja sama yang berkelanjutan.",
+    logoUrl: null,
+    images: getImagesFromArray(stukomFiles), 
   },
   {
     id: 5,
     title: "GAMMA FEST",
     theme: "Generation of Mathematics Education Festival",
     description:
-      "GAMMA FEST adalah serangkaian acara perlombaan internal yang bertujuan untuk mengasah kemampuan akademik dan non-akademik mahasiswa Pendidikan Matematika UIN Sunan Gunung Djati Bandung.",
+      "GAMMA FEST adalah event terakhir yang diselenggarakan oleh HIMATIKA sekaligus sebagai perayaan milad HIMATIKA UIN SGD Bandung.",
     logoUrl: [[logoGamma]],
-    images: getImagesFromArray(absoluteFiles), 
+    images: getImagesFromArray(gammaFiles), 
     aftermovieUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   // {

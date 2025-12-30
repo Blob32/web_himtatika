@@ -40,7 +40,7 @@ const Profile = () => {
 
           <div className="max-w-3xl mx-auto">
             <p className="text-md leading-relaxed text-gray-700 mb-4">
-              Sejak berdiri pada 2 Desember 1999, HIMATIKA UIN Sunan Gunung Djati Bandung menjadi ruang tumbuh bagi mahasiswa Pendidikan Matematika—tempat untuk mengasah akademik, menumbuhkan kreativitas, dan berkontribusi bagi masyarakat melalui semangat Tridarma Perguruan Tinggi.
+              Sejak berdiri pada 2 Desember 1999, HIMATIKA UIN Sunan Gunung Djati Bandung menjadi ruang tumbuh bagi mahasiswa Pendidikan Matematika tempat untuk mengasah akademik, menumbuhkan kreativitas, dan berkontribusi bagi masyarakat melalui semangat Tridarma Perguruan Tinggi.
             </p>
             <p className="text-md leading-relaxed text-gray-700 mb-4">
               {cabinetData.deskripsi}
@@ -76,7 +76,10 @@ const Profile = () => {
           <h3 className="text-3xl font-title text-brand-dark font-bold mb-2">
             Struktur & Bidang
           </h3>
-          <p className="text-gray-600">Klik pada logo bidang untuk melihat detail</p>
+          <p className="text-gray-600 text-left">
+            Sembilan bidang menjadi denyut nadi HIMATIKA — PI, PKEAK, PAO, PO, PS, PPM, KP, PM, dan PKW.<br></br>
+            <br></br>Masing-masing diisi oleh individu dengan karakter dan cerita yang berbeda, namun disatukan oleh semangat belajar, kolaborasi, dan profesionalisme. Bersama, kami menjaga integritas HIMATIKA sebagai ruang bertumbuh dan berkarya.
+          </p>
         </div> */}
 
         {/* <div className="flex flex-row content-center justify-evenly flex-wrap  items-center gap-2">
@@ -101,12 +104,12 @@ const Profile = () => {
         </div> */}
 
         {/* --- MODAL --- */}
-        {selectedBidang && (
+        {/* {selectedBidang && (
           <BidangModal 
             bidang={selectedBidang} 
             onClose={() => setSelectedBidang(null)} 
           />
-        )}
+        )} */}
       </div>
     </section>
     
