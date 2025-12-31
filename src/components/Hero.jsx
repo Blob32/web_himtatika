@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import GambarBG from "../assets/mainHero.webp";
 
 const Hero = () => {
   // Gunakan useRef untuk memanipulasi gambar langsung tanpa re-render komponen
@@ -54,7 +53,7 @@ const Hero = () => {
 <div className="absolute inset-0 z-0 select-none">
   <img
     ref={imgRef}
-    src={GambarBG}
+    src="https://ik.imagekit.io/mddeta8rw/assets/mainHero.webp?updatedAt=1767177446077"
     alt="Main Hero Image"
     // UBAH DARI: -top-[10vh] MENJADI: -top-[15vh] atau top-0 jika ragu
     // UBAH DARI: h-[120vh] MENJADI: h-[130vh]
